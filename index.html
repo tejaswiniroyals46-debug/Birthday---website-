@@ -1,0 +1,117 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Someone Special ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Music -->
+
+    <audio id="bgMusic" autoplay loop>
+    <source src="bgmusic.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- Floating Hearts -->
+    <div class="hearts"></div>
+
+    <!-- INTRO -->
+    <section class="section intro">
+        <h1 class="fade">Hey You ❤️</h1>
+        <p class="typing-text">
+            There’s something I wanted to tell you...
+        </p>
+
+        <button onclick="nextSection()">Start</button>
+    </section>
+
+    <!-- STORY 1 -->
+    <section class="section">
+        <h1>It All Started Slowly ✨</h1>
+
+        <p>
+            I never thought someone could become this important to me...
+            But little by little,
+            every chat,
+            every call,
+            every smile,
+            became a beautiful part of my days ❤️
+        </p>
+
+        <button onclick="nextSection()">Next</button>
+    </section>
+
+    <!-- STORY 2 -->
+    <section class="section">
+        <h1>You Became My Comfort 🌙</h1>
+
+        <p>
+            Late night conversations...
+            random laughs...
+            silly fights...
+            everything with you felt special.
+            Thank you for coming into my life my dear tom👻😘
+        </p>
+
+        <button onclick="nextSection()">Next</button>
+    </section>
+
+    <!-- PHOTO SLIDESHOW -->
+    <section class="section">
+        <h1>Beautiful Memories 📸</h1>
+
+        <div class="slideshow">
+
+            <img class="slide active" src="photo1.jpg">
+            <img class="slide" src="photo2.jpg">
+            <img class="slide" src="photo3.jpg">
+            <img class="slide" src="photo4.jpg">
+
+        </div>
+
+        <button onclick="nextSection()">Next</button>
+    </section>
+
+    <!-- FINAL MESSAGE -->
+    <section class="section">
+        <h1>One Last Thing ❤️</h1>
+
+        <p>
+           Happiest birthday naana😘❤️‍🩹
+            No matter what happens...
+            I’ll always be grateful that you became a part of my life.
+        </p>
+
+        <button onclick="nextSection()">Final Surprise</button>
+    </section>
+
+    <!-- AUDIO SURPRISE -->
+    <section class="section final-section">
+
+        <h1 class="glow">Close Your Eyes & Listen 🎧</h1>
+
+        <p>
+            This is specially for you Naana❤️
+        </p>
+
+        <button onclick="playAudio()">Play Audio</button>
+
+        <audio id="surpriseAudio">
+            <source src="music.mp3" type="audio/mp3">
+        </audio>
+
+        <h2 id="finalText">
+            HAPPIEST BIRTHDAY TO MY LOVE❤️‍🩹
+            Forever Grateful For You Naana ❤️
+        </h2>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
